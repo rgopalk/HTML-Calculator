@@ -1,0 +1,155 @@
+﻿<html>
+<head>
+<title>Calculator</title>
+    <style>
+ body
+{
+background-color:tan;
+} 
+.box
+{
+background-color:#3d4543;
+height:300px;
+width:250px;
+border-radius:10px;
+position:relative;
+top:80px;
+left:40%;
+}
+
+.header {
+      
+    font-color:black;
+    font-weight: bold;
+    font-size:large;
+     
+}
+.display
+{
+background-color:#222;
+width:220px;
+position:relative;
+left:15px;
+top:20px;
+height:40px;
+}
+.display input
+{
+position:relative;
+left:2px;
+top:2px;
+height:35px;
+color:black;
+background-color:#bccd95;
+font-size:21px;
+text-align:right;
+}
+
+.keys
+{
+position:relative;
+top:15px;
+}
+.button
+{
+width:40px;
+height:30px;
+border:none;
+border-radius:8px;
+margin-left:17px;
+cursor:pointer;
+border-top:2px solid transparent;
+}
+.button.gray
+{
+color:white;
+background-color:#6f6f6f;
+border-bottom:black 2px solid;
+border-top:2px #6f6f6f solid;
+font-weight:bold;
+}
+.button.pink
+{
+color:black;
+background-color:white;
+border-bottom:black 2px solid;
+font-color:black;
+font-weight:bold;
+}
+.button.black
+{
+color:white;
+background-color:303030;
+border-bottom:black 2px solid;
+border-top:2px 303030 solid;
+}
+.button.orange
+{
+color:black;
+background-color:white;
+border-bottom:black 2px solid;
+border-top:2px FF9933 solid;
+font-color: black;
+font-weight:bold;
+}
+.gray:active
+{
+border-top:black 2px solid;
+border-bottom:2px #6f6f6f solid;
+}
+.pink:active
+{
+border-top:black 2px solid;
+border-bottom:#ff4561 2px solid;
+}
+.black:active
+{
+border-top:black 2px solid;
+border-bottom:#303030 2px solid;
+}
+.orange:active
+{
+border-top:black 2px solid;
+border-bottom:FF9933 2px solid;
+}
+p
+{
+line-height:10px;
+}
+
+            </style>
+</head>
+    
+        <form name="calculator" >
+            <div class="box">
+             
+<div class="keys">
+<input type="button" class=" button gray" value="7" onClick="document.calculator.ans.value += '7'">
+<input type="button" class=" button gray" value="8" onClick="document.calculator.ans.value += '8'">
+<input type="button" class=" button gray" value="9" onClick="document.calculator.ans.value += '9'">
+<input type="reset" value="C" class="button pink">
+<br> <input type="button" class=" button gray" value="4" onClick="document.calculator.ans.value += '4'">
+<input type="button" class=" button gray" value="5" onClick="document.calculator.ans.value += '5'">
+<input type="button" class=" button gray" value="6" onClick="document.calculator.ans.value += '6'">
+<input type="button" value="-" class="button pink" onClick="document.calculator.ans.value += '-'">
+<br> <input type="button" class=" button gray" value="1" onClick="document.calculator.ans.value += '1'">
+<input type="button" class=" button gray" value="2" onClick="document.calculator.ans.value += '2'">
+<input type="button" class=" button gray" value="3" onClick="document.calculator.ans.value += '3'">
+<input type="button" class=" button pink" value="+" onClick="document.calculator.ans.value += '+'">
+<br> <input type="button" value="*" class="button pink" onClick="document.calculator.ans.value += '*'">
+<input type="button"  class=" button gray"value="0" onClick="document.calculator.ans.value += '0'">
+<input type="button" class=" button pink" value="/" onClick="document.calculator.ans.value += '/'">
+<input type="button" value="%"  class="button pink"onClick="document.calculator.ans.value += '*0.01'">
+<br> <input type="button" value="=" class="button orange" onClick="document.calculator.ans.value = eval(document.calculator.ans.value)">
+<br><input type="textfield" name="ans" value=""  style="width:250px;height:30px;background-color:white;font-color:black; font-weight:bold" >
+                </div>
+                </div>
+</form>
+
+    
+
+</form>
+</body>
+</html>
+
+
